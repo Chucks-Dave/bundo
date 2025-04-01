@@ -51,7 +51,7 @@ const NavigationBar = () => {
               )}
             </button>
           </div>
-          <Link href="/">
+          <Link href="/" className="cursor-pointer">
             <Image src="/FullLogo.svg" height={23.7} width={94} alt="bundo" />
           </Link>
         </div>
