@@ -1,0 +1,60 @@
+@import url(https://db.onlinewebfonts.com/c/06fc8deca65f663c5843903449d43321?family=TV+2+Sans+Display+Regular);
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: "TV 2 Sans Display Regular";
+    src: url("https://db.onlinewebfonts.com/t/06fc8deca65f663c5843903449d43321.eot");
+    src: url("https://db.onlinewebfonts.com/t/06fc8deca65f663c5843903449d43321.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/06fc8deca65f663c5843903449d43321.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/06fc8deca65f663c5843903449d43321.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/06fc8deca65f663c5843903449d43321.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/06fc8deca65f663c5843903449d43321.svg#TV 2 Sans Display Regular")format("svg");
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+   font-family: 'TV 2 Sans Display Regular', sans-serif;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  max-height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #34A853; /* Red scrollbar thumb */
+  border-radius: 8px; /* Rounded scrollbar edges */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #34A853; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Light gray track */
+  border-radius: 10px;
+}
