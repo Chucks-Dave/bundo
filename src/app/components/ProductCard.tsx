@@ -53,7 +53,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             className="flex items-center justify-self-center"
           />
         )}
-        <div className="relative bottom-5">
+        <div className="relative lg:bottom-5 max-md:bottom-1">
           <Image
             src="/heart.svg"
             height={16}
@@ -63,8 +63,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
           />
         </div>
       </div>
-      <p className="font-medium text-sm text-[#1E1E1E]">{product.name}</p>
-      <p className="text-[12px] font-normal text-[#1E1E1E]">
+      <p className="font-medium lg:text-sm max-md:text-[10px] text-[#1E1E1E]">
+        {product.name}
+      </p>
+      <p className="lg:text-[12px] max-md:text-[10px] font-normal text-[#1E1E1E]">
         {product.description}
       </p>
       <div className="flex gap-2 items-center">
@@ -85,7 +87,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           ({product.total_reviews})
         </p>
       </div>
-      <p className="font-normal text-[15px] text-black">
+      <p className="font-normal lg:text-[15px] max-md:text-[12px] text-black">
         {cost ? `₦${cost}` : "Price not available"}
       </p>
     </div>

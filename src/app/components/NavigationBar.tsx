@@ -64,14 +64,14 @@ const NavigationBar = () => {
               onClick={toggleDropdown}
             />
             {dropdownOpen && (
-              <div className="mt-8 p-4 border rounded bg-white absolute">
-                <p>Dropdown content here</p>
+              <div className="mt-8 p-4  rounded bg-white absolute">
+                <p>category</p>
               </div>
             )}
             <Dropdown label="Help" isOpen={help} onClick={togglehelp} />
             {help && (
-              <div className="mt-8 p-4 border rounded bg-white absolute left-5 right-5">
-                <p>Dropdown content here</p>
+              <div className="mt-8 p-4  rounded bg-white absolute left-5 right-5">
+                <p>help</p>
               </div>
             )}
           </div>
