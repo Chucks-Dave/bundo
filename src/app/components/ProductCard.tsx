@@ -39,7 +39,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {product.business_profile_picture ? (
           <Image
             src={product.business_profile_picture}
-            height={189}
+            height={183}
             width={180}
             alt={product.name ?? ``}
             className="flex items-center justify-self-center "
