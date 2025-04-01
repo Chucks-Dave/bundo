@@ -4,6 +4,7 @@ import Image from "next/image";
 import { CustomButton } from "./CustomButton";
 import CustomInput from "./CustomInput";
 import Dropdown from "./dropdown";
+import Link from "next/link";
 
 const categories = [
   "Appliances & Electronic",
@@ -50,7 +51,9 @@ const NavigationBar = () => {
               )}
             </button>
           </div>
-          <Image src="/FullLogo.svg" height={23.7} width={94} alt="bundo" />
+          <Link href="/">
+            <Image src="/FullLogo.svg" height={23.7} width={94} alt="bundo" />
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3 flex-1">

@@ -11,8 +11,8 @@ const Explore = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log({ address, businessName, imageLink });
+
+    // console.log({ address, businessName, imageLink });
   };
   return (
     <div className="px-5 py-5 space-y-2">
